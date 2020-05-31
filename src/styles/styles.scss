@@ -40,6 +40,7 @@ body{
 .homepage__container{
 		padding-left:15px;
 		border-left:3px solid white;
+		box-sizing: border-box; 
 	}
 
 .homepage__one{
@@ -71,8 +72,22 @@ body{
 	padding-top:100px;
 
 }
+.aboutpage__one{
+	font-weight: bold;
+    font-size: 1.6rem;
+    background: black;
+    color: white;
+    padding-left: 19px;
+    width: 240px;
+    height: 44px;
+}
+.aboutpage__two{
+	line-height: normal;
+    font-size: 1.2rem;
+}
 .aboutpage__container{
 	display:flex;
+	box-sizing: border-box;
 }
 .title{
 	font-weight:bold;
@@ -88,28 +103,26 @@ body{
 	width:175px;
 	margin-bottom:30px;
 }
-aboutpage__container{
-	width:100%;
-}
+
 .aboutpage__img{
 	width:500px;
 }
 .aboutpage__wrapone{
-	width:50%;
+
+	box-sizing: border-box;
+	padding:50px;
 }
 .aboutpage__wraptwo{
 	padding:18px;
-	width:50%;
+	box-sizing: border-box;
 }
 //.list-group-item{
 //	border:none;
 //}
 
-*{
-	border:1px solid red;
-}
 
-@media screen and (max-device-width: 768px) {
+
+@media screen and (max-device-width: 1024px) {
 
 .homepage, .aboutpage{
 	padding-left:20px;
