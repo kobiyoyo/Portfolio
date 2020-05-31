@@ -7,7 +7,7 @@ import {
   Nav,
   NavItem,
   NavLink} from 'reactstrap';
-
+// import { Link, animateScroll as scroll } from "react-scroll";
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 

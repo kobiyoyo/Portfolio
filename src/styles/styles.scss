@@ -5,7 +5,9 @@ $xl-size:4.8rem;
 $desktop-breakpoint:45rem;
 
 
-
+body{
+	color:gray;
+}
 
 
 // Main nav
@@ -30,7 +32,7 @@ $desktop-breakpoint:45rem;
 	background-image: linear-gradient(to right top, #540d6e, #810872, #aa1072, #cf266d, #ee4266);
 	height:600px;
 	display:flex;
-	padding-left:100px;
+	padding-left:$xl-size;
 	align-items:center;
 	color:white;
 
@@ -64,15 +66,68 @@ $desktop-breakpoint:45rem;
 }
 //about
 .aboutpage{
-	background-image: linear-gradient(to right top, #540d6e, #810872, #aa1072, #cf266d, #ee4266);
 	height:600px;
-	display:flex;
-	padding-left:100px;
-	align-items:center;
-	color:white;
+	padding-left:$xl-size;
+	padding-top:100px;
 
 }
+.aboutpage__container{
+	display:flex;
+}
+.title{
+	font-weight:bold;
+	font-size:30px;
+	border-bottom:3px solid #EE4266;
+	margin-bottom:30px;
 
+}
+.aboutpage__title{
+	font-weight:bold;
+	font-size:30px;
+	border-bottom:3px solid #EE4266;
+	width:175px;
+	margin-bottom:30px;
+}
+aboutpage__container{
+	width:100%;
+}
+.aboutpage__img{
+	width:500px;
+}
+.aboutpage__wrapone{
+	width:50%;
+}
+.aboutpage__wraptwo{
+	padding:18px;
+	width:50%;
+}
+//.list-group-item{
+//	border:none;
+//}
+
+*{
+	border:1px solid red;
+}
+
+@media screen and (max-device-width: 768px) {
+
+.homepage, .aboutpage{
+	padding-left:20px;
+}
+
+
+.homepage{
+	clip-path:none;
+}
+
+.aboutpage__container{
+	display:flex;
+	flex-direction:column;
+}
+
+
+}
+//@media screen and (min-width: 800px) and (max-width: 1200px) {}
 
 
 
