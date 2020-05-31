@@ -1,0 +1,78 @@
+$s-size:1.2rem;
+$m-size:1.6rem;
+$l-size:3.2rem;
+$xl-size:4.8rem;
+$desktop-breakpoint:45rem;
+
+
+
+
+
+// Main nav
+
+
+.main-nav{
+	height:65px;
+	border:none;
+	box-shadow:rgba(38,50,56,0.07) 0px 7px 50px 0px;
+	z-index:100;
+}
+
+
+.navi-links{
+	margin-right:50px;
+}	
+
+//Home
+.homepage{
+
+	clip-path: polygon(85% 55%, 100% 40%, 100% 0, 0 0, 0 100%, 0 94%, 22% 83%, 44% 77%, 62% 66%);
+	background-image: linear-gradient(to right top, #540d6e, #810872, #aa1072, #cf266d, #ee4266);
+	height:600px;
+	display:flex;
+	padding-left:100px;
+	align-items:center;
+	color:white;
+
+}
+.homepage__container{
+		padding-left:15px;
+		border-left:3px solid white;
+	}
+
+.homepage__one{
+	font-weight:bold;
+	font-size:17px;
+}
+.homepage__two{
+	font-weight:bold;
+	font-size:50px;
+}
+.homepage__three{
+	font-weight:400;
+	font-size:20px;
+}
+.homepage__button{
+	border:1px solid white;
+	border-radius:5px;
+	height:50px;
+	width:200px;
+	background:transparent;
+	color:white;
+	font-weight:bold;
+
+}
+//about
+.aboutpage{
+	background-image: linear-gradient(to right top, #540d6e, #810872, #aa1072, #cf266d, #ee4266);
+	height:600px;
+	display:flex;
+	padding-left:100px;
+	align-items:center;
+	color:white;
+
+}
+
+
+
+

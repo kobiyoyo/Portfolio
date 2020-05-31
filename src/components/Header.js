@@ -6,13 +6,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
+  NavLink} from 'reactstrap';
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,16 +15,22 @@ const Header = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+      <Navbar color="white" light expand="md" className="main-nav">
+        <NavbarBrand href="/">Chubi</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink className="navi-links" href="#about">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <NavLink className="navi-links" href="/project">Portfolio</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="navi-links" href="/blog">Blog</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="navi-links" href="/contact">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
