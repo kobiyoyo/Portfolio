@@ -3,7 +3,7 @@ $m-size:1.6rem;
 $l-size:3.2rem;
 $xl-size:4.8rem;
 $desktop-breakpoint:45rem;
-
+$primary-color:#EE4266;
 
 body{
 	color:gray;
@@ -35,12 +35,18 @@ body{
 	padding-left:$xl-size;
 	align-items:center;
 	color:white;
-
 }
+
+
+
+
+
+
 .homepage__container{
 		padding-left:15px;
 		border-left:3px solid white;
-		box-sizing: border-box; 
+		box-sizing: border-box;
+		height:260px; 
 	}
 
 .homepage__one{
@@ -52,8 +58,10 @@ body{
 	font-size:50px;
 }
 .homepage__three{
-	font-weight:400;
-	font-size:20px;
+	height: 58px;
+}
+.homepage__four{
+	margin-top:20px;
 }
 .homepage__button{
 	border:1px solid white;
@@ -62,14 +70,24 @@ body{
 	width:200px;
 	background:transparent;
 	color:white;
+	padding: 12px;
 	font-weight:bold;
-
+	transition: all 0.3s linear 0.7s
 }
+.homepage__button:hover{
+	background:white;
+	text-decoration:none;
+	color:$primary-color;
+}
+
+
+
 //about
 .aboutpage{
 	height:600px;
 	padding-left:$xl-size;
 	padding-top:100px;
+	margin-bottom:200px;
 
 }
 .aboutpage__one{
@@ -92,16 +110,12 @@ body{
 .title{
 	font-weight:bold;
 	font-size:30px;
-	border-bottom:3px solid #EE4266;
+	border-bottom:3px solid $primary-color;
 	margin-bottom:30px;
 
 }
 .aboutpage__title{
-	font-weight:bold;
-	font-size:30px;
-	border-bottom:3px solid #EE4266;
 	width:175px;
-	margin-bottom:30px;
 }
 
 .aboutpage__img{
@@ -115,10 +129,104 @@ body{
 .aboutpage__wraptwo{
 	padding:18px;
 	box-sizing: border-box;
+    box-shadow: rgba(38, 50, 56, 0.07) 0px 7px 50px 0px;
 }
-//.list-group-item{
-//	border:none;
+.list-group-item{
+	border:none;
+}
+
+
+//Blog
+.blogpage{
+	padding:40px;
+
+a{
+	background:$primary-color;
+    color: white;
+    border:none;
+    padding:5px;
+    font-size: 13px;
+    border-bottom:.4rem solid darken($primary-color,15%);
+}
+
+}
+.blogpage__title{
+	width:100px;
+}
+
+.card{
+	box-shadow: rgba(38, 50, 56, 0.07) 0px 7px 50px 0px;
+	border:none;
+}
+//Portfolio
+.portfoliopage{
+	padding:40px;
+	background:#F5F8FD;
+a{
+	background:$primary-color;
+    color: white;
+    border:none;
+    padding:5px;
+    font-size: 13px;
+    border-bottom:.4rem solid darken($primary-color,15%);
+    margin-right:10px;
+
+ }
+}
+.portfoliopage__btn-wrap{
+	margin-top:30px;
+}
+.portfoliopage__row{
+	box-shadow: rgba(38, 50, 56, 0.07) 0px 7px 50px 0px;
+    border: none;
+    background:white;
+    margin-bottom:40px;
+}
+.portfoliopage__column_one{
+	padding:0;	
+}
+.portfoliopage__column_two{
+	padding:40px;
+	
+}
+.portfoliopage__skills{
+	border-radius: 4px;
+    border: 2px solid #3BCEAC;
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+    font-size: .85em;
+    color: #525f7f;
+}
+.portfoliopage__title{
+	width:183px;
+}
+
+
+//*{
+//	border:1px solid red;
 //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -137,9 +245,40 @@ body{
 	display:flex;
 	flex-direction:column;
 }
-
+.aboutpage{
+	margin-bottom:450px;
 
 }
+
+}
+@media screen and (max-device-width: 480px) {
+
+.aboutpage__img{
+	width:250px;
+}
+.homepage__two{
+	font-size:20px;
+}
+.card{
+	margin-bottom:10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //@media screen and (min-width: 800px) and (max-width: 1200px) {}
 
 
