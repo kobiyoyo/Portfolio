@@ -5,10 +5,17 @@ $xl-size:4.8rem;
 $desktop-breakpoint:45rem;
 $primary-color:#EE4266;
 
+
 body{
-	color:gray;
+  color:gray;
 }
 
+html,body,p,h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    cursor: pointer;
+}
 
 // Main nav
 
@@ -88,7 +95,10 @@ body{
 	padding-left:$xl-size;
 	padding-top:100px;
 	margin-bottom:200px;
-
+.aboutpage__list{
+	line-height: 2rem;
+    list-style: none;
+}
 }
 .aboutpage__one{
 	font-weight: bold;
@@ -129,7 +139,7 @@ body{
 .aboutpage__wraptwo{
 	padding:18px;
 	box-sizing: border-box;
-    box-shadow: rgba(38, 50, 56, 0.07) 0px 7px 50px 0px;
+
 }
 .list-group-item{
 	border:none;
@@ -161,17 +171,21 @@ a{
 //Portfolio
 .portfoliopage{
 	padding:40px;
-	background:#F5F8FD;
-a{
+	background:#F9F9FF;
+button{
 	background:$primary-color;
-    color: white;
+  	height:2.5rem;
+  	border-radius:6px;
     border:none;
     padding:5px;
-    font-size: 13px;
+    font-size:13px;
     border-bottom:.4rem solid darken($primary-color,15%);
     margin-right:10px;
-
+a{
+	color: white;
  }
+}
+
 }
 .portfoliopage__btn-wrap{
 	margin-top:30px;
@@ -202,13 +216,51 @@ a{
 .portfoliopage__title{
 	width:183px;
 }
+//Footer
+.footerpage{
+	background-image: linear-gradient(to bottom, #540d6e, #4b0549, #39072b, #230816, #000000);
+	height:200px;
+	display:flex;
+	padding-left:$xl-size;
+	align-items:center;
+	color:white;
+}
+//Contact
+.contactpage{
+	padding:40px;
+	background:#F9F9FF;
+button{
+	background:$primary-color;
+  	height:2.5rem;
+  	border-radius:6px;
+    border:none;
+    padding:5px;
+    font-size:14px;
+    width:20%;
+    border-bottom:.4rem solid darken($primary-color,15%);
+    margin-right:10px;
+	}
+}
+#textarea{
+	height:200px;
+}
+.contactpage__title{
+	width:148px;
+}
 
-
+#firstname,#lastname,#textarea,#email{
+	border:none;
+}
 //*{
 //	border:1px solid red;
 //}
 
-
+//Banner
+.bannerpage{
+	background:black;
+	padding:$l-size;
+	font-size:20px;
+	}
 
 
 
@@ -246,7 +298,7 @@ a{
 	flex-direction:column;
 }
 .aboutpage{
-	margin-bottom:450px;
+	margin-bottom:560px;
 
 }
 
