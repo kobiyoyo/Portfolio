@@ -16,8 +16,8 @@ const About = () => (
 						<QueueAnim key="1"
 			          		leaveReverse   delay={400}  ease={['easeOutQuart', 'easeInOutQuart']} className="aboutpage__list">
 			          	
-							<p key="0" className='aboutpage__one'>I'M Chubi Adama</p> 
-							<p key="1" className='aboutpage__two'>A Full-Stack Developer, currently based in Abuja, Nigeria. I'm passionate about creating scalable web experience for next generation users. </p>
+						
+							<p key="1" className='aboutpage__two'>I'm a <span className='aboutpage__one'>Full-Stack Developer</span>, currently based in Abuja, Nigeria. I'm passionate about creating scalable web experience for next generation users. </p>
 			
 						     <div key="2"><b>Current Job:</b> Technical Support Engineer, Microverse</div>
 						     <div key="3"><b>Skills:</b> JavaScript (ES5/ES6), Ruby, HTML, CSS, Ruby on Rails, TDD, jQuery, Bootstrap, PostgreSQL, SQLite3, Rspec, Capybara, Git, GitHub, Heroku, React, Webpack, SASS/SCSS </div>

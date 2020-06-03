@@ -5,9 +5,11 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink} from 'reactstrap';
-// import { Link, animateScroll as scroll } from "react-scroll";
+  NavItem} from 'reactstrap';
+import { Link} from "react-scroll";
+
+
+
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,22 +17,25 @@ const Header = (props) => {
 
   return (
     <div>
-      <Navbar color="white" light expand="md" className="main-nav">
+      <Navbar color="white" light expand="md" className="main-nav fixed-top">
         <NavbarBrand href="/">Chubi</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            <NavItem>
-              <NavLink className="navi-links" href="#about">About</NavLink>
+          <Nav className="ml-auto homenav" navbar>
+       <NavItem>
+               <Link activeClass="active" spy={true} smooth={true} offset={10} duration={2000} className="navi-links" to="home">Home</Link>
             </NavItem>
             <NavItem>
-              <NavLink className="navi-links" href="/project">Portfolio</NavLink>
+               <Link activeClass="active" spy={true} smooth={true} offset={10} duration={2000} className="navi-links" to="about">About</Link>
             </NavItem>
             <NavItem>
-              <NavLink className="navi-links" href="/blog">Blog</NavLink>
+                <Link activeClass="active" spy={true} smooth={true}  duration={2000} className="navi-links" to="portfolio">Portfolio</Link>
             </NavItem>
             <NavItem>
-              <NavLink className="navi-links" href="/contact">Contact</NavLink>
+                <Link activeClass="active" spy={true} smooth={true}  duration={2000} className="navi-links" to="blog">Blog</Link>
+            </NavItem>
+            <NavItem>
+                <Link activeClass="active" spy={true} smooth={true}  duration={2000} className="navi-links" to="contact">Contact</Link>
             </NavItem>
           </Nav>
         </Collapse>

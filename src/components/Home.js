@@ -1,7 +1,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 const Home = () => (
-	<section className="homepage">
+	<section className="homepage" id="home">
 		<div className="homepage__container">
 			<p className='homepage__one'>Hello,my name is</p> 
 			<p className='homepage__two'>Chubi Adama</p>
@@ -20,7 +20,7 @@ const Home = () => (
   }}
 />
 			</div>
-			<div className='homepage__four'><a className='homepage__button' href="#portfolio">See Projects</a></div>
+			<div className='homepage__four'><button className='homepage__button' ><a  href="#portfolio">See Projects</a></button></div>
 		</div>
 	</section>
 

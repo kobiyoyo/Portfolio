@@ -3,7 +3,7 @@ import { Row, Col, Card, CardImg, CardText, CardBody,
   CardTitle} from 'reactstrap';
 const Blog = () => (
 
- <section className="blogpage">
+ <section className="blogpage" id="blog">
  	<h2 className="blogpage__title title">BLOG</h2>
   	<Row>
   	  <Col sm="12" md="4">

@@ -12,7 +12,7 @@ const Banner = () => (
     <Container>
       <Row>
       <Col sm="12" md="6"><b>I'm extremely passionate about software development in all it's forms </b></Col>
-      <Col sm="12" md="6"><button><a>GET IN TOUCH!</a></button></Col>
+      <Col sm="12" md="6"><button className="bannerpage__button"><a href="he.com">GET IN TOUCH!</a></button></Col>
       </Row>
     </Container>
   </section>

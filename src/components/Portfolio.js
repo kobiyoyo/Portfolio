@@ -9,7 +9,7 @@ import QueueAnim from 'rc-queue-anim';
 const Portfolio = () => (
 
  
- <section className="portfoliopage">
+ <section className="portfoliopage" id="portfolio">
   <h2 className="portfoliopage__title title">PORTFOLIO</h2>
     <Row className="portfoliopage__row">   
       <Col sm="12" md="6" className="portfoliopage__column_one">
