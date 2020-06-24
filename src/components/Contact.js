@@ -24,14 +24,25 @@ function ContactUs(){
   <h2 className="contactpage__title title">CONTACT</h2> 
 <Row>
 <Col sm="12" md="6">
-      <OverPack style={{ height: 350 }} always={false} playScale={0.4} >
+      <OverPack always={false} playScale={0.4} className="contactpage__links">
         
             <QueueAnim key="1"
                     leaveReverse   delay={400}  ease={['easeOutQuart', 'easeInOutQuart']} className="aboutpage__list">
                   
-                 <div key="2"><b>Email:</b> adamachubi@gmail.com</div>
-                 <div key="3"><b>Phone No:</b> +2348034194700 </div>
-                 <div key="4"><b>Interests:</b><a href="twitter"><img src="require()" /></a></div>
+                 <div key="2"><b>Email :</b> adamachubi@gmail.com</div>
+                 <div key="3"><b>Phone No :</b> +2348034194700 </div>
+                 <Row key="4" className="contactpage__row">
+                 <Col>
+                    <a href="https://www.linkedin.com/in/chubiyojo-adama/"  target="_blank" rel="noopener noreferrer" ><img src={require('../images/icons/linkedin.svg')} alt="linkedin social media icon" /></a>
+                 </Col>
+                  <Col>
+                    <a href="https://github.com/kobiyoyo" target="_blank"  rel="noopener noreferrer" ><img src={require('../images/icons/github.svg')} alt="github social media icon" /></a>
+                 </Col>
+                  <Col>
+                    <a href="mailto:adamachubi@gmail.com" target="_blank" rel="noopener noreferrer" ><img src={require('../images/icons/email.png')} alt="mail social media icon" /></a>
+                 </Col>
+
+                 </Row>
          
               </QueueAnim>
            

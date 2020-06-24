@@ -19,7 +19,6 @@ const AppRouter = () => (
 	  	<Portfolio/>
 	  	<Blog/>
 	  	<Contact/>
-
 	  	<Footer/>
 	  </main>
 	) 
