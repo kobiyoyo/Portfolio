@@ -4,4 +4,4 @@ import AppRouter from './routers/AppRouter';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/styles.scss';
 
-render(< AppRouter />,document.getElementById('root'))
+render(<AppRouter />, document.getElementById('root'));
