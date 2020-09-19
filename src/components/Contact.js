@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Col, Row, Button, Form, FormGroup, Input,
+  Col, Row, Button, Form, FormGroup, Input,Label
 } from 'reactstrap';
 import emailjs from 'emailjs-com';
 import { OverPack } from 'rc-scroll-anim';
@@ -53,7 +53,7 @@ function ContactUs() {
                   <a href="https://github.com/kobiyoyo" target="_blank" rel="noopener noreferrer"><img src={require('../images/icons/github.svg')} alt="github social media icon" /></a>
                 </Col>
                 <Col>
-                  <a href="mailto:adamachubi@gmail.com" target="_blank" rel="noopener noreferrer"><img src={require('../images/icons/email.png')} alt="mail social media icon" /></a>
+                  <a href="https://twitter.com/_kobiyoyo" target="_blank" rel="noopener noreferrer"><img src={require('../images/icons/twitter.svg')} alt="twitter media icon" /></a>
                 </Col>
 
               </Row>
@@ -68,24 +68,24 @@ function ContactUs() {
             <Row form>
               <Col md={6}>
                 <FormGroup>
-
+                  <Label for="firstname"></Label>
                   <Input type="text" name="firstname" id="firstname" placeholder="First Name" />
                 </FormGroup>
               </Col>
               <Col md={6}>
                 <FormGroup>
-
+                <Label for="lastname"></Label>
                   <Input type="text" name="lastname" id="lastname" placeholder="Last Name" />
                 </FormGroup>
               </Col>
             </Row>
             <FormGroup>
-
+            <Label for="email"></Label>
               <Input type="email" name="email" id="email" placeholder="Email" />
             </FormGroup>
 
             <FormGroup>
-
+            <Label for="textarea"></Label>
               <Input type="textarea" name="message" id="textarea" placeholder="Message" />
             </FormGroup>
             <Button>Submit</Button>

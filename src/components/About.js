@@ -29,14 +29,13 @@ const About = () => (
             <p key="1" className="aboutpage__two">
               I'm a
               <span className="aboutpage__one">Full-Stack Developer</span>
-              , currently based in Abuja, Nigeria. I'm passionate about creating scalable web experience for next generation users.
+              , currently based in Abuja, Nigeria. I'm passionate about creating a scalable web experience for next generation users.
               {' '}
             </p>
-
             <div key="2">
-              <b>Current Job:</b>
+              <b>Plans:</b>
               {' '}
-              Technical Support Engineer, Microverse
+              Looking for my next full-time software developer role. I'm also looking forward to learning new technologies and deepening my knowledge of my current skills.
             </div>
             <div key="3">
               <b>Skills:</b>
@@ -45,20 +44,11 @@ const About = () => (
               {' '}
             </div>
             <div key="4">
-              <b>Interests:</b>
-              {' '}
-              Cooking, Reading, Tennis
-            </div>
-            <div key="5">
               <b>Education:</b>
               {' '}
-              B.sc Economics, B.sc Peace Studies & Conflict Resolution, Cert. Full-Stack Development
+              B.Sc. Economics, B.Sc. Peace Studies & Conflict Resolution, Certificate in Full-Stack Development
             </div>
-            <div key="6">
-              <b>Plans:</b>
-              {' '}
-              Looking for my next full-time software developer role. I'm also looking forward to learning new technologies and deepening my knowledge of my current skills.
-            </div>
+
 
           </QueueAnim>
 

@@ -3,11 +3,11 @@ $m-size:1.6rem;
 $l-size:3.2rem;
 $xl-size:4.8rem;
 $desktop-breakpoint:45rem;
-$primary-color:#EE4266;
+$primary-color:#51b0ff;
 
 
 body{
-  color:gray;
+  color:black;
 }
 
 html,body,p,h1,h2,h3,h4,h5,h6{
@@ -31,7 +31,7 @@ button{
 	margin-right:50px;
 }	
 .active {
-    border-bottom: 3px solid #EC4166;
+    border-bottom: 3px solid $primary-color;
 }
 //Home
 .homepage{
@@ -111,7 +111,7 @@ button{
 .aboutpage__one{
 	font-weight: bold;
     font-size: 1.6rem;
-    background: #EC4166;
+    background: $primary-color;
     color: white;
     padding-right: 10px;
     padding-left: 19px;
