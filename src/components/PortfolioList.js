@@ -17,10 +17,10 @@ const PortfolioList = ({
           <h1 key="0"><b>{ displayName.replace(/-/ig, ' ') }</b></h1>
 
           <p key="1">{summary}</p>
-          <p key="2" className="portfoliopage__wrap">
+          <div key="2" className="portfoliopage__wrap">
             {libraries.map((library, key) => <span key={key} className="portfoliopage__skills">{library}</span>)}
             {languages.map((language, key) => <span key={key} className="portfoliopage__skills">{language}</span>)}
-          </p>
+          </div>
           <div key="3" className="portfoliopage__btn-wrap">
             <button><a href={website} target="_blank" rel="noopener noreferrer">Live Demo</a></button>
             <button><a href={githubUrl} target="_blank" rel="noopener noreferrer">View Source</a></button>
